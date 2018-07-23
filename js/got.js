@@ -19,7 +19,7 @@ getData('json/characters.json', successAjax);
 
 function searchToCaracter() {
     var inputValue = document.querySelector('#search-text').value;
-    var list = document.querySelectorAll('.character-list .spaceship-item');
+    var list = document.querySelectorAll('.character-list .character-item');
     for (var i = 0; i < list.length; i++) {
         if (list[i].spaceship.name.toLowerCase().indexOf(inputValue.toLowerCase()) < 0) {
             list[i].style.display = 'none';
@@ -52,7 +52,7 @@ function createListDiv(container) {
 // A keresés után a főoldalon megjelenő szereplő-adatok
 function createSpaceShip(list, spaceship) {
     var itemDiv = document.createElement('div');
-    itemDiv.className = 'spaceship-item';
+    itemDiv.className = 'character-item';
     itemDiv.spaceship = spaceship; // Itt íródnak ki a szereplők adatai!
     itemDiv.onclick = function () { // klikkelés után. 
         createOneCharacter(this.spaceship);
