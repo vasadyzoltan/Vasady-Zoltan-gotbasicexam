@@ -12,14 +12,14 @@ function getData(url, callbackFunc) {
 function successAjax(xhttp) {
     // Innen lesz elérhető a JSON file tartalma, tehát az adatok amikkel dolgoznod kell
     var userDatas = JSON.parse(xhttp.responseText)[2].data;
-    showSpaceshipList(userDatas);
+    caracterList(userDatas);
 }
 
 getData('json/characters.json', successAjax);
 
-function searchShip() {
+function searchToCaracter() {
     var inputValue = document.querySelector('#search-text').value;
-    var list = document.querySelectorAll('.spaceship-list .spaceship-item');
+    var list = document.querySelectorAll('.character-list .spaceship-item');
     for (var i = 0; i < list.length; i++) {
         if (list[i].spaceship.name.toLowerCase().indexOf(inputValue.toLowerCase()) < 0) {
             list[i].style.display = 'none';
@@ -30,15 +30,11 @@ function searchShip() {
 }
 
 
-document.querySelector('#search-button').onclick = searchShip;
+document.querySelector('#search-button').onclick = searchToCaracter;
 
-/**
- *
- * @param {Array} listSource array of spaceships
- */
 
-function showSpaceshipList(listSource) {
-    var container = document.querySelector('.spaceship-list');
+function caracterList(listSource) {
+    var container = document.querySelector('.character-list');
     var listDiv = createListDiv(container);
     for (let i = 0; i < listSource.length; i++) {
         createSpaceShip(listDiv, listSource[i]);
@@ -59,9 +55,9 @@ function createListDiv(container) {
 function createSpaceShip(list, spaceship) {
     var itemDiv = document.createElement('div');
     itemDiv.className = 'spaceship-item';
-    itemDiv.spaceship = spaceship; // Itt íródnak ki a hajó adatai!
-    itemDiv.onclick = function () { // klikkelés után . 
-        createOneSpaceship(this.spaceship);
+    itemDiv.spaceship = spaceship; // Itt íródnak ki a szereplők adatai!
+    itemDiv.onclick = function () { // klikkelés után. 
+        createOneCharacter(this.spaceship);
     }
 
     // Itt írja ki az összes hajó adatok divekben
@@ -89,8 +85,8 @@ function objectToDisplay(spaceship) {
     return message;
 }
 
-function createOneSpaceship(spaceship) {
-    var container = document.querySelector('.one-spaceship');
+function createOneCharacter(spaceship) {
+    var container = document.querySelector('.one-character');
     var listDiv = createListDiv(container);
     listDiv.innerHTML = '';
 
@@ -102,7 +98,7 @@ function createOneSpaceship(spaceship) {
     }
 
     var title = document.createElement('h3');
-    title.innerHTML = spaceship.name + '<br>' + '<br>' + objectToDisplay(spaceship);
+    title.innerHTML = spaceship.name + '<br>' + '<br>' + spaceship.bio;
 
     var cim = document.createElement('div');
     cim.innerHTML = 'Trónok harca';
