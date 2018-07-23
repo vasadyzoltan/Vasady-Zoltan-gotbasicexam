@@ -20,7 +20,7 @@
                 "dead": "",
                 "portrait": "assets\/jon.png",
                 "picture": "assets\/pictures\/jon_snow.jpg",
-                "bio": "Jon is the bastard child of Ned Stark of Winterfell and a unkwnow woman. Soon after his marriage, Ne",
+                "bio": "'Jon is the bastard child of Ned Stark of Winterfell and a unkwnow woman. Soon after his marriage, Ned Stark leaved his home to go to fight on the war of the usurper, and returned home carrying a infant that was supposedly his own",
                 "house": "",
                 "organization": "nightwatch"
             },
@@ -31,7 +31,7 @@
                 "dead": "true",
                 "portrait": "assets\/ned.png",
                 "picture": "assets\/pictures\/ned_stark.jpg",
-                "bio": "Eddard 'Ned' Stark is the head of House Stark, Lord of Winterfell, and Warden of the North. He is a ",
+                "bio": "Stark is the head of House Stark, Lord of Winterfell, and Warden of the North. He is a friend to King Robert Baratheon, whom he was raised with and helped to win the Iron Throne, and is eventually named his Hand.",
                 "house": "stark",
                 "organization": ""
             },
@@ -42,7 +42,7 @@
                 "dead": "",
                 "portrait": "assets\/arya.png",
                 "picture": "assets\/pictures\/arya_stark.jpg",
-                "bio": "Arya Stark is the third child and second daughter of Lord Eddard and Lady Catelyn Stark. She is nine",
+                "bio": "Arya Stark is the third child and second daughter of Lord Eddard and Lady Catelyn Stark. She is nine at the start of A Game of Thrones.",
                 "house": "stark",
                 "organization": ""
             },
@@ -53,7 +53,7 @@
                 "dead": "",
                 "portrait": "assets\/sansa.png",
                 "picture": "assets\/pictures\/sansa_stark.jpg",
-                "bio": "Sansa Stark is the elder daughter of Catelyn and Eddard Stark. She is thirteen years old at the star",
+                "bio": "'Sansa Stark is the elder daughter of Catelyn and Eddard Stark. She is thirteen years old at the start of the series. ",
                 "house": "stark",
                 "organization": ""
             },
@@ -64,7 +64,7 @@
                 "dead": "",
                 "portrait": "assets\/robb.png",
                 "picture": "assets\/pictures\/robb_stark.jpg",
-                "bio": "Robb Stark is the eldest son of Eddard Stark and Catelyn Tully and the heir to Winterfell and the No",
+                "bio": "Robb Stark is the eldest son of Eddard Stark and Catelyn Tully and the heir to Winterfell and the North.",
                 "house": "stark",
                 "organization": ""
             },
@@ -75,7 +75,7 @@
                 "dead": "",
                 "portrait": "assets\/bran.png",
                 "picture": "assets\/pictures\/bran_stark.jpg",
-                "bio": "Eddard and Catelyn's second son.  Bran was educated by Maester Luwin and trained with weapons; he se",
+                "bio": "Bran was educated by Maester Luwin and trained with weapons; he seemed destined to be an excellent fighter",
                 "house": "stark",
                 "organization": ""
             },
@@ -86,7 +86,7 @@
                 "dead": "",
                 "portrait": "assets\/rickon.png",
                 "picture": "assets\/pictures\/rickon_stark.jpg",
-                "bio": "Rickon Stark is Eddard and Catelyn's youngest child, only three years old when the series begins. Ri",
+                "bio": "Rickon Stark is Eddard and Catelyn's youngest child, only three years old when the series begins. Rickon is a naturally aggressive and strong-willed child, but his youth makes it difficult for him to cope with the terrible changes that come to his family and life. ",
                 "house": "stark",
                 "organization": ""
             },
@@ -97,7 +97,7 @@
                 "dead": "",
                 "portrait": "assets\/catelyn.png",
                 "picture": "assets\/pictures\/catelyn_tully.jpg",
-                "bio": "Catelyn is the eldest daughter of Lady Minisa and Lord Hoster Tully, head of House Tully, Lord Param",
+                "bio": "Catelyn is the eldest daughter of Lady Minisa and Lord Hoster Tully, head of House Tully, Lord Paramount of the Riverlands. She was betrothed to Brandon Stark, heir of Winterfell, but he  was killed by the Mad King before they could marry, so their parents rearraged the wedding to make Ned Stark replace his defunct brother. She moved to Winterfell, where she and Eddard have formed a strong and loving marriage.",
                 "house": "tully",
                 "organization": ""
             },
