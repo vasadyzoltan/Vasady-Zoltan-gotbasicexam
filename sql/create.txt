@@ -6,15 +6,15 @@ CREATE DATABASE IF NOT EXISTS got
 2-3. Feladat
 
 CREATE TABLE characters(
-  Azonosító int NOT NULL,
-  Név varchar(100) NOT NULL,
-  Becenév varchar(100),
-  Halott_e varchar(5),
-  Portrékép varchar(100) NOT NULL,
-  Kép varchar(100) NOT NULL,
-  Történet varchar(600),
-  Ház varchar(100),
-  Szervezet varchar(100),
+  id int NOT NULL,
+  name varchar(100) NOT NULL,
+  alias varchar(100),
+  dead varchar(5),
+  portrait varchar(100) NOT NULL,
+  picture varchar(100) NOT NULL,
+  bio varchar(600),
+  house varchar(100),
+  organization varchar(100),
   PRIMARY KEY (Azonosító)
 )
   ENGINE=InnoDB;
