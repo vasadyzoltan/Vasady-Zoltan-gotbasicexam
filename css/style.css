@@ -121,6 +121,14 @@ body{
 
 .spaceship-item span:hover{
   cursor: pointer;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 1px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition: 0.3s;
 }
 
 h3 {
