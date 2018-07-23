@@ -1,6 +1,7 @@
 body{
     margin:0;
     font-size: 16px;
+    font-family: 'Cinzel', serif;
   }
   
   div{
@@ -86,7 +87,7 @@ body{
     }
 
     .one-character .got {
-    font-size: 48px;
+    font-size: 30px;
     color:white;
     }
 
@@ -110,6 +111,7 @@ body{
 
 .list-div {
   color: white;
+  font-size: 20 px;
 }
 
 .searchbar i {

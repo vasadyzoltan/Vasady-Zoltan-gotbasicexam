@@ -60,7 +60,7 @@ function createSpaceShip(list, spaceship) {
         createOneCharacter(this.spaceship);
     }
 
-    // Itt írja ki az összes hajó adatok divekben
+    // Itt írja ki az összes szereplő adatait divekben
     var span = document.createElement('span');
     span.innerHTML = spaceship.name;
 
@@ -77,13 +77,6 @@ function createSpaceShip(list, spaceship) {
     list.appendChild(itemDiv);
 }
 
-function objectToDisplay(spaceship) {
-    var message = '';
-    for (var i in spaceship) {
-        message += [i] + ': ' + spaceship[i] + '<br>';
-    }
-    return message;
-}
 
 function createOneCharacter(spaceship) {
     var container = document.querySelector('.one-character');
@@ -107,4 +100,7 @@ function createOneCharacter(spaceship) {
     listDiv.appendChild(cim);
     listDiv.appendChild(img);
     listDiv.appendChild(title);
+
+
+    document.getElementById('search-text').value = 'Search a caracter';
 }
