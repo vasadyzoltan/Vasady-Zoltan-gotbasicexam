@@ -55,5 +55,30 @@ function createListDiv(container) {
     return listDiv;
 }
 
+// A keresés után a főoldalon megjelenő hajó-adatok
+function createSpaceShip(list, spaceship) {
+    var itemDiv = document.createElement('div');
+    itemDiv.className = 'spaceship-item';
+    itemDiv.spaceship = spaceship; // Itt íródnak ki a hajó adatai!
+    itemDiv.onclick = function () { // klikkelés után . 
+        createOneSpaceship(this.spaceship);
+    }
+
+    // Itt írja ki az összes hajó adatok divekben
+    var span = document.createElement('span');
+    span.innerHTML = spaceship.name;
+
+    var img = document.createElement('img');
+    img.src = spaceship.portrait;
+    img.alt = spaceship.name;
+    img.onerror = function (ev) {
+        ev.target.src = 'assets/arya.png';
+    }
+
+    itemDiv.appendChild(span);
+    itemDiv.appendChild(img);
+
+    list.appendChild(itemDiv);
+}
 
 
