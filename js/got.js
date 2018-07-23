@@ -60,7 +60,7 @@ function createSpaceShip(list, spaceship) {
         createOneCharacter(this.spaceship);
     }
 
-    // Itt írja ki az összes szereplő adatait divekben
+    // Itt írja ki az összes szereplő adat divekben
     var span = document.createElement('span');
     span.innerHTML = spaceship.name;
 
@@ -93,8 +93,8 @@ function createOneCharacter(spaceship) {
     var title = document.createElement('h3');
     title.innerHTML = spaceship.name + '<br>' + '<br>' + spaceship.bio;
 
-    var cim = document.createElement('div');
-    cim.innerHTML = 'Trónok harca';
+    var cim = document.createElement('img');
+    cim.src = 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Logo_Game_of_Thrones.png';
     cim.classList.add('got');
 
     listDiv.appendChild(cim);
