@@ -29,9 +29,7 @@ function searchToCaracter() {
     }
 }
 
-
 document.querySelector('#search-button').onclick = searchToCaracter;
-
 
 function caracterList(listSource) {
     var container = document.querySelector('.character-list');
@@ -51,7 +49,7 @@ function createListDiv(container) {
     return listDiv;
 }
 
-// A keresés után a főoldalon megjelenő hajó-adatok
+// A keresés után a főoldalon megjelenő szereplő-adatok
 function createSpaceShip(list, spaceship) {
     var itemDiv = document.createElement('div');
     itemDiv.className = 'spaceship-item';
@@ -73,10 +71,8 @@ function createSpaceShip(list, spaceship) {
 
     itemDiv.appendChild(span);
     itemDiv.appendChild(img);
-
     list.appendChild(itemDiv);
 }
-
 
 function createOneCharacter(spaceship) {
     var container = document.querySelector('.one-character');
@@ -87,7 +83,6 @@ function createOneCharacter(spaceship) {
     img.src = spaceship.picture;
     img.onerror = function (ev) {
         ev.target.src = 'assets/arya.png';
-
     }
 
     var title = document.createElement('h3');
@@ -100,7 +95,6 @@ function createOneCharacter(spaceship) {
     listDiv.appendChild(cim);
     listDiv.appendChild(img);
     listDiv.appendChild(title);
-
 
     document.getElementById('search-text').value = 'Search a caracter';
 }
