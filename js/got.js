@@ -32,5 +32,28 @@ function searchShip() {
 
 document.querySelector('#search-button').onclick = searchShip;
 
+/**
+ *
+ * @param {Array} listSource array of spaceships
+ */
+
+function showSpaceshipList(listSource) {
+    var container = document.querySelector('.spaceship-list');
+    var listDiv = createListDiv(container);
+    for (let i = 0; i < listSource.length; i++) {
+        createSpaceShip(listDiv, listSource[i]);
+    }
+}
+// Ha igaz az, hogy nem létezik a listDiv akkor létrehozzuk
+function createListDiv(container) {
+    var listDiv = container.querySelector('.list-div');
+    if (!listDiv) {
+        listDiv = document.createElement('div');
+        listDiv.className = 'list-div';
+        container.appendChild(listDiv);
+    }
+    return listDiv;
+}
+
 
 
