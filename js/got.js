@@ -81,4 +81,34 @@ function createSpaceShip(list, spaceship) {
     list.appendChild(itemDiv);
 }
 
+function objectToDisplay(spaceship) {
+    var message = '';
+    for (var i in spaceship) {
+        message += [i] + ': ' + spaceship[i] + '<br>';
+    }
+    return message;
+}
 
+function createOneSpaceship(spaceship) {
+    var container = document.querySelector('.one-spaceship');
+    var listDiv = createListDiv(container);
+    listDiv.innerHTML = '';
+
+    var img = document.createElement('img');
+    img.src = spaceship.picture;
+    img.onerror = function (ev) {
+        ev.target.src = 'assets/arya.png';
+
+    }
+
+    var title = document.createElement('h3');
+    title.innerHTML = spaceship.name + '<br>' + '<br>' + objectToDisplay(spaceship);
+
+    var cim = document.createElement('div');
+    cim.innerHTML = 'Trónok harca';
+    cim.classList.add('got');
+
+    listDiv.appendChild(cim);
+    listDiv.appendChild(img);
+    listDiv.appendChild(title);
+}

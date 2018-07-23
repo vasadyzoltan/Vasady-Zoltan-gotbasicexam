@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    font-size: 16px;
+  }
+  
+  div{
+    position:relative;
+    box-sizing:border-box;
+    padding: 20px;
+  }
+  .container{
+    width:100%;
+    min-height: 100vh;
+    padding:0;
+  }
+  
+  .container:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
+  .container>div{
+    float: left;
+    height: auto;
+  }
