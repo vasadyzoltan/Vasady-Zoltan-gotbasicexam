@@ -140,6 +140,10 @@ img.got {
     height: auto;
 }
 
+div.spaceship-item:hover {
+    cursor: pointer;
+}
+
 }
 
 
