@@ -16,3 +16,21 @@ function successAjax(xhttp) {
 }
 
 getData('json/characters.json', successAjax);
+
+function searchShip() {
+    var inputValue = document.querySelector('#search-text').value;
+    var list = document.querySelectorAll('.spaceship-list .spaceship-item');
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].spaceship.name.toLowerCase().indexOf(inputValue.toLowerCase()) < 0) {
+            list[i].style.display = 'none';
+        } else {
+            list[i].style.display = 'block';
+        }
+    }
+}
+
+
+document.querySelector('#search-button').onclick = searchShip;
+
+
+
