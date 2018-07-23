@@ -38,7 +38,7 @@ function caracterList(listSource) {
         makingcharacters(listDiv, listSource[i]);
     }
 }
-// Ha igaz az, hogy nem létezik a listDiv akkor létrehozzuk
+
 function createListDiv(container) {
     var listDiv = container.querySelector('.list-div');
     if (!listDiv) {
