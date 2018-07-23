@@ -35,7 +35,7 @@ function caracterList(listSource) {
     var container = document.querySelector('.character-list');
     var listDiv = createListDiv(container);
     for (let i = 0; i < listSource.length; i++) {
-        createSpaceShip(listDiv, listSource[i]);
+        makingcharacters(listDiv, listSource[i]);
     }
 }
 // Ha igaz az, hogy nem létezik a listDiv akkor létrehozzuk
@@ -50,7 +50,7 @@ function createListDiv(container) {
 }
 
 // A keresés után a főoldalon megjelenő szereplő-adatok
-function createSpaceShip(list, spaceship) {
+function makingcharacters(list, spaceship) {
     var itemDiv = document.createElement('div');
     itemDiv.className = 'character-item';
     itemDiv.spaceship = spaceship; // Itt íródnak ki a szereplők adatai!
