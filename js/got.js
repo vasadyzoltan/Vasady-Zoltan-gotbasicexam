@@ -82,7 +82,7 @@ function createOneCharacter(spaceship) {
     var img = document.createElement('img');
     img.src = spaceship.picture;
     img.onerror = function (ev) {
-        ev.target.src = 'assets/arya.png';
+        ev.target.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/1024px-No_image_3x4.svg.png';
     }
 
     var title = document.createElement('h3');
