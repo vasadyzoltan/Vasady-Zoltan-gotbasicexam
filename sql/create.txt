@@ -15,6 +15,6 @@ CREATE TABLE characters(
   bio varchar(600),
   house varchar(100),
   organization varchar(100),
-  PRIMARY KEY (Azonosító)
+  PRIMARY KEY (id)
 )
   ENGINE=InnoDB;
